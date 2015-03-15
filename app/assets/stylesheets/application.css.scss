@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+  	font-family: 'Bree Serif', sans-serif;
+  	background-color: #F4EEEE;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+a{
+	color: #E74C3C;
+}
+
+.navbar-default {
+	background-color: #e74c3c;
+	border-radius: 0;
+	height: 80px;
+	padding: 15px 0;
+	border: none;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 2em;
+	font-weight: 300;
+	color: #FFFFFF !important;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-link{
+	color: #E74C3C;
+}
+
+.btn-default{
+	padding: 5px 8px 5px 8px;
+	border-radius: 3px;
+	margin-top: 6px;
+}
+
+#jobs {
+	.job {
+		padding: 1em 0;
+		border-bottom: 1px solid rgba(250,250,250, 0.5);
+		h2 {
+			font-size: 2.5em;
+			font-weight: 300;
+			margin-bottom: 0;
+			  color: #E74C3C;
+			a {
+				color: #16a085;
+			}
+		}
+		p {
+			color: #000000;
+		}
+	}
+}
+
+#links {
+	margin-top: 2em;
+}
